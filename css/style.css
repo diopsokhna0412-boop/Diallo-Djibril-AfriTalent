@@ -413,3 +413,14 @@ section h2 {
     font-weight:700;
     color:var(--primary-color);
 }
+.error-message{
+    color:red;
+    font-size:0.9rem;
+    margin-top:5px;
+}
+
+#successMessage{
+    color:green;
+    font-weight:600;
+    margin-top:15px;
+}
