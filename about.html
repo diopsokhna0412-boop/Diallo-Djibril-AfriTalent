@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- HEADER / NAVBAR -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
           <a class="navbar-brand fw-bold" href="index.html"> AfriTalent </a>
+          <!-- Bouton hamburger mobile -->
 
           <button
             class="navbar-toggler"
@@ -27,11 +29,12 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- Menu principal -->
 
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="index.html"> Accueil </a>
+                <a class="nav-link" href="index.html"> Accueil </a>
               </li>
 
               <li class="nav-item">
@@ -43,7 +46,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> À propos </a>
+                <a class="nav-link active" href="about.html"> À propos </a>
               </li>
 
               <li class="nav-item">
@@ -53,7 +56,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact.html"> Contact </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                  Rejoindre maintenant
+                </a>
+              </li>
             </ul>
+
+            <!-- Bouton Dark Mode -->
             <button id="theme-toggle" class="btn btn-outline-primary ms-3">
               Mode
             </button>
@@ -61,10 +71,13 @@
         </div>
       </nav>
     </header>
+    <!-- CONTENU PRINCIPAL -->
 
     <main class="container py-5 mt-5">
+      <!-- SECTION : NOTRE HISTOIRE -->
       <section class="fade-section mb-5">
         <div class="row align-items-center">
+          <!-- Texte de présentation -->
           <div class="col-lg-6">
             <h1 class="mb-4">Notre Histoire</h1>
 
@@ -88,6 +101,7 @@
               innovants.
             </p>
           </div>
+          <!-- Image illustrative -->
 
           <div class="col-lg-6">
             <img
@@ -98,6 +112,7 @@
           </div>
         </div>
       </section>
+      <!-- SECTION : ÉQUIPE -->
 
       <section class="fade-section mb-5">
         <h2 class="text-center mb-5">Notre Équipe</h2>
@@ -106,13 +121,13 @@
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card h-100 text-center">
               <img
-                src="images/image fn.jpeg"
+                src="./images/image-fn.jpeg"
                 class="card-img-top"
                 alt="Fatou Ndiaye"
               />
 
               <div class="card-body">
-                <h5>Fatou Ndiaye</h5>
+                <h2>Fatou Ndiaye</h2>
 
                 <p class="text-primary fw-bold">Directrice Générale (CEO)</p>
 
@@ -130,7 +145,7 @@
               <img src="images/mb.jpeg" class="card-img-top" alt="Mamadou Ba" />
 
               <div class="card-body">
-                <h5>Mamadou Ba</h5>
+                <h2>Mamadou Ba</h2>
 
                 <p class="text-primary fw-bold">Directeur Technique (CTO)</p>
 
@@ -152,7 +167,7 @@
               />
 
               <div class="card-body">
-                <h5>Aminata Fall</h5>
+                <h2>Aminata Fall</h2>
 
                 <p class="text-primary fw-bold">Responsable Marketing</p>
 
@@ -168,13 +183,13 @@
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card h-100 text-center">
               <img
-                src="images/img g 3.jpeg"
+                src="./images/img-g3.jpeg"
                 class="card-img-top"
                 alt="Ibrahima Sow"
               />
 
               <div class="card-body">
-                <h5>Ibrahima Sow</h5>
+                <h2>Ibrahima Sow</h2>
 
                 <p class="text-primary fw-bold">Responsable Produit</p>
 
@@ -188,6 +203,7 @@
           </div>
         </div>
       </section>
+      <!-- SECTION : VALEURS -->
 
       <section class="fade-section mb-5">
         <h2 class="text-center mb-5">Nos Valeurs</h2>
@@ -197,7 +213,7 @@
             <div class="card h-100 text-center p-4">
               <i class="bi bi-lightbulb display-4 text-warning"></i>
 
-              <h4 class="mt-3">Innovation</h4>
+              <h2 class="mt-3">Innovation</h2>
 
               <p>
                 Nous développons constamment de nouvelles solutions pour
@@ -210,7 +226,7 @@
             <div class="card h-100 text-center p-4">
               <i class="bi bi-universal-access display-4 text-success"></i>
 
-              <h4 class="mt-3">Accessibilité</h4>
+              <h2 class="mt-3">Accessibilité</h2>
 
               <p>
                 Chaque talent mérite les mêmes opportunités, quel que soit son
@@ -223,7 +239,7 @@
             <div class="card h-100 text-center p-4">
               <i class="bi bi-people-fill display-4 text-primary"></i>
 
-              <h4 class="mt-3">Communauté</h4>
+              <h2 class="mt-3">Communauté</h2>
 
               <p>
                 Nous encourageons l'entraide, le partage de connaissances et la
@@ -236,7 +252,7 @@
             <div class="card h-100 text-center p-4">
               <i class="bi bi-award-fill display-4 text-danger"></i>
 
-              <h4 class="mt-3">Excellence</h4>
+              <h2 class="mt-3">Excellence</h2>
 
               <p>
                 Nous mettons en avant les meilleurs profils pour garantir la
@@ -246,11 +262,13 @@
           </div>
         </div>
       </section>
+      <!-- SECTION : CHIFFRES CLÉS -->
 
       <section class="fade-section">
         <h2 class="text-center mb-5">Chiffres Clés</h2>
 
         <div class="row g-4">
+          <!-- Compteur freelances -->
           <div class="col-md-6 col-lg-3">
             <div class="card text-center p-4 h-100">
               <h2 class="counter" data-target="2500">0</h2>
@@ -258,6 +276,7 @@
               <p>Freelances inscrits</p>
             </div>
           </div>
+          <!-- Compteur entreprises -->
 
           <div class="col-md-6 col-lg-3">
             <div class="card text-center p-4 h-100">
@@ -266,6 +285,7 @@
               <p>Entreprises partenaires</p>
             </div>
           </div>
+          <!-- Compteur missions -->
 
           <div class="col-md-6 col-lg-3">
             <div class="card text-center p-4 h-100">
@@ -274,6 +294,7 @@
               <p>Missions réalisées</p>
             </div>
           </div>
+          <!-- Compteur pays -->
 
           <div class="col-md-6 col-lg-3">
             <div class="card text-center p-4 h-100">
@@ -285,21 +306,24 @@
         </div>
       </section>
     </main>
+    <!-- FOOTER -->
 
     <footer class="bg-dark text-white py-5">
       <div class="container">
         <div class="row">
+          <!-- Présentation de la plateforme -->
           <div class="col-md-3">
-            <h5>AfriTalent</h5>
+            <h2>AfriTalent</h2>
 
             <p>
               Plateforme africaine de mise en relation entre freelances tech et
               entreprises.
             </p>
           </div>
+          <!-- Liens utiles -->
 
           <div class="col-md-3">
-            <h5>Liens utiles</h5>
+            <h2>Liens utiles</h2>
 
             <ul class="list-unstyled">
               <li>Accueil</li>
@@ -307,9 +331,10 @@
               <li>Tarifs</li>
             </ul>
           </div>
+          <!-- Ressources -->
 
           <div class="col-md-3">
-            <h5>Ressources</h5>
+            <h2>Ressources</h2>
 
             <ul class="list-unstyled">
               <li>Blog</li>
@@ -317,9 +342,10 @@
               <li>Support</li>
             </ul>
           </div>
+          <!-- contact -->
 
           <div class="col-md-3">
-            <h5>Contact</h5>
+            <h2>Contact</h2>
 
             <p>contact@afritalent.com</p>
             <p>+221 78 690 34 76</p>
@@ -328,6 +354,9 @@
         </div>
       </div>
     </footer>
+    \
+    <!-- BOUTON RETOUR EN HAUT -->
+
     <button id="backToTop" class="btn btn-primary">↑</button>
 
     <!-- Le contenu de la page sera ajoute ici -->

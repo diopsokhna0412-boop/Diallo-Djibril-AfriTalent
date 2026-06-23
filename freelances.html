@@ -13,10 +13,13 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- HEADER / NAVBAR -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
+          <!-- Logo du site -->
           <a class="navbar-brand fw-bold" href="index.html"> AfriTalent </a>
+          <!-- Bouton menu responsive -->
 
           <button
             class="navbar-toggler"
@@ -27,15 +30,18 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- Liens de navigation -->
 
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="index.html"> Accueil </a>
+                <a class="nav-link" href="index.html"> Accueil </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="freelances.html"> Freelances </a>
+                <a class="nav-link active" href="freelances.html">
+                  Freelances
+                </a>
               </li>
 
               <li class="nav-item">
@@ -53,7 +59,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact.html"> Contact </a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                  Rejoindre maintenant
+                </a>
+              </li>
             </ul>
+            <!-- Bouton Dark / Light Mode -->
             <button id="theme-toggle" class="btn btn-outline-primary ms-3">
               Mode
             </button>
@@ -61,6 +74,8 @@
         </div>
       </nav>
     </header>
+    <!-- CONTENU PRINCIPAL -->
+
     <main class="container py-5 mt-5">
       <section>
         <h1 class="text-center mb-4">Catalogue des Freelances</h1>
@@ -69,6 +84,7 @@
           Découvrez les meilleurs talents tech africains disponibles pour vos
           projets.
         </p>
+        <!-- FILTRES PAR CATÉGORIE -->
 
         <div class="text-center mb-5">
           <button class="btn btn-primary filter-btn" data-filter="all">
@@ -97,6 +113,7 @@
             Data & IA
           </button>
         </div>
+        <!-- GRILLE DES FREELANCES -->
 
         <div class="row g-4">
           <div
@@ -111,7 +128,7 @@
               />
 
               <div class="card-body">
-                <h5 class="card-title">Amadou Ndiaye</h5>
+                <h2 class="card-title">Amadou Ndiaye</h2>
                 <p class="fw-bold">Développeur Full Stack</p>
 
                 <p>Expert React et Laravel avec plus de 5 ans d'expérience.</p>
@@ -137,7 +154,7 @@
               />
 
               <div class="card-body">
-                <h5>Aissatou Diallo</h5>
+                <h2>Aissatou Diallo</h2>
 
                 <p class="fw-bold">UI/UX Designer</p>
 
@@ -161,13 +178,13 @@
           >
             <div class="card h-100">
               <img
-                src="images/img g 2.png"
+                src="./images/img-g2.png"
                 class="card-img-top"
                 alt="Moussa Ba"
               />
 
               <div class="card-body">
-                <h5>Moussa Ba</h5>
+                <h2>Moussa Ba</h2>
 
                 <p class="fw-bold">Marketing Digital</p>
 
@@ -187,13 +204,13 @@
           >
             <div class="card h-100">
               <img
-                src="images/image f 2.png"
+                src="./images/image-f-2.png"
                 class="card-img-top"
                 alt="Fatou Fall"
               />
 
               <div class="card-body">
-                <h5>Fatou Fall</h5>
+                <h2>Fatou Fall</h2>
 
                 <p class="fw-bold">Data Analyst</p>
 
@@ -217,13 +234,13 @@
           >
             <div class="card h-100">
               <img
-                src="images/img g 3.jpeg"
+                src="./images/img-g3.jpeg"
                 class="card-img-top"
                 alt="Ibrahima Sow"
               />
 
               <div class="card-body">
-                <h5>Ibrahima Sow</h5>
+                <h2>Ibrahima Sow</h2>
 
                 <p class="fw-bold">Développeur Front-End</p>
 
@@ -246,13 +263,13 @@
           >
             <div class="card h-100">
               <img
-                src="images/Image f3.png"
+                src="./images/Image-f3.png"
                 class="card-img-top"
                 alt="Mariama Sy"
               />
 
               <div class="card-body">
-                <h5>Mariama Sy</h5>
+                <h2>Mariama Sy</h2>
 
                 <p class="fw-bold">Graphic Designer</p>
 
@@ -273,13 +290,13 @@
           >
             <div class="card h-100">
               <img
-                src="images/img g 4.jpeg"
+                src="./images/img-g4.jpeg"
                 class="card-img-top"
                 alt="Cheikh Diop"
               />
 
               <div class="card-body">
-                <h5>Cheikh Diop</h5>
+                <h2>Cheikh Diop</h2>
 
                 <p class="fw-bold">Community Manager</p>
 
@@ -300,13 +317,13 @@
           >
             <div class="card h-100">
               <img
-                src="images/img g 5.jpeg"
+                src="./images/img-g-5.jpeg"
                 class="card-img-top"
                 alt="Abdou Karim"
               />
 
               <div class="card-body">
-                <h5>Abdou Karim</h5>
+                <h2>Abdou Karim</h2>
 
                 <p class="fw-bold">Ingénieur IA</p>
 
@@ -327,13 +344,13 @@
           >
             <div class="card h-100">
               <img
-                src="images/img g 6.jpeg"
+                src="./images/img-g6.jpeg"
                 class="card-img-top"
                 alt="Ousmane Gueye"
               />
 
               <div class="card-body">
-                <h5>Ousmane Gueye</h5>
+                <h2>Ousmane Gueye</h2>
 
                 <p class="fw-bold">Développeur Back-End</p>
 
@@ -350,20 +367,24 @@
         </div>
       </section>
     </main>
+    <!-- FOOTER -->
+
     <footer class="bg-dark text-white py-5">
       <div class="container">
         <div class="row">
+          <!-- Présentation de la plateforme -->
           <div class="col-md-3">
-            <h5>AfriTalent</h5>
+            <h2>AfriTalent</h2>
 
             <p>
               Plateforme africaine de mise en relation entre freelances tech et
               entreprises.
             </p>
           </div>
+          <!-- Liens utiles -->
 
           <div class="col-md-3">
-            <h5>Liens utiles</h5>
+            <h2>Liens utiles</h2>
 
             <ul class="list-unstyled">
               <li>Accueil</li>
@@ -371,9 +392,10 @@
               <li>Tarifs</li>
             </ul>
           </div>
+          <!-- Ressources -->
 
           <div class="col-md-3">
-            <h5>Ressources</h5>
+            <h2>Ressources</h2>
 
             <ul class="list-unstyled">
               <li>Blog</li>
@@ -381,9 +403,10 @@
               <li>Support</li>
             </ul>
           </div>
+          <!-- contact -->
 
           <div class="col-md-3">
-            <h5>Contact</h5>
+            <h2>Contact</h2>
 
             <p>contact@afritalent.com</p>
             <p>+221 78 690 34 76</p>
@@ -392,6 +415,7 @@
         </div>
       </div>
     </footer>
+    <!-- BOUTON RETOUR EN HAUT -->
     <button id="backToTop" class="btn btn-primary">↑</button>
 
     <!-- Le contenu de la page sera ajoute ici -->

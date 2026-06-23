@@ -1,3 +1,5 @@
+// DARK MODE + LOCALSTORAGE
+
 const themeToggle = document.getElementById("theme-toggle");
 
 if (localStorage.getItem("theme") === "dark") {
@@ -32,6 +34,8 @@ if (themeToggle) {
 
 }
 
+//  NAVBAR DYNAMIQUE AU SCROLL
+
 const navbar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
@@ -52,6 +56,7 @@ window.addEventListener("scroll", () => {
 
 });
 
+// BOUTON RETOUR EN HAUT
 
 const backToTop = document.getElementById("backToTop");
 
@@ -86,6 +91,8 @@ if (backToTop) {
 
 }
 
+// FADE IN SECTIONS
+
 const fadeSections = document.querySelectorAll(".fade-section");
 
 const fadeObserver = new IntersectionObserver(
@@ -115,6 +122,8 @@ fadeSections.forEach((section) => {
     fadeObserver.observe(section);
 
 });
+
+// COMPTEURS ANIMÉS
 
 const counters = document.querySelectorAll(".counter");
 
@@ -146,7 +155,7 @@ const counterObserver = new IntersectionObserver(
 
                 }else{
 
-                    counter.textContent = target;
+                    counter.textContent = "+" + target;
 
                 }
 
@@ -173,6 +182,9 @@ counters.forEach((counter) => {
     counterObserver.observe(counter);
 
 });
+
+// Filtrage des freelances
+
 const filterButtons = document.querySelectorAll(".filter-btn");
 const freelancerCards = document.querySelectorAll(".freelance-card");
 
@@ -182,16 +194,22 @@ filterButtons.forEach(button => {
 
         const filter = button.dataset.filter;
 
+        // Met à jour le bouton actif
+        filterButtons.forEach(btn => {
+            btn.classList.remove("btn-primary");
+            btn.classList.add("btn-outline-primary");
+        });
+
+        button.classList.remove("btn-outline-primary");
+        button.classList.add("btn-primary");
+
+        // Filtrage des cartes
         freelancerCards.forEach(card => {
 
             if(filter === "all" || card.dataset.category === filter){
-
                 card.style.display = "block";
-
             }else{
-
                 card.style.display = "none";
-
             }
 
         });
@@ -199,6 +217,9 @@ filterButtons.forEach(button => {
     });
 
 });
+
+// Validation du formulaire
+
 const contactForm = document.getElementById("contactForm");
 
 if(contactForm){
@@ -249,10 +270,9 @@ if(contactForm){
         }
 
         if(isValid){
-
-            document.getElementById("successMessage").textContent =
-            "Votre message a été envoyé avec succès !";
-
+            const successMessage = document.getElementById("successMessage");
+            successMessage.textContent = "Votre message a été envoyé avec succès!"
+            successMessage.classList.remove("d-none");
             contactForm.reset();
         }
 

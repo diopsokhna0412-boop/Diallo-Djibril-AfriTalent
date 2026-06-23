@@ -1,27 +1,35 @@
 <!doctype html>
 <html lang="fr">
   <head>
+    <!-- Encodage des caractères -->
     <meta charset="UTF-8" />
+    <!-- Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titre affiché dans l'onglet du navigateur -->
     <title>AfriTalent — Accueil</title>
     <!-- Bootstrap 5 via CDN : feuille de style -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
     />
-    <!-- Votre feuille de style personnelle -->
+    <!-- Feuille de style personnalisée -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- HEADER / NAVBAR -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Barre de navigation principale -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
+          <!-- Logo du site -->
           <a class="navbar-brand fw-bold" href="index.html"> AfriTalent </a>
 
+          <!-- Bouton menu hamburger -->
           <button
             class="navbar-toggler"
             type="button"
@@ -31,7 +39,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
+          <!-- Menu de navigation -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
@@ -57,7 +65,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact.html"> Contact </a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                  Rejoindre maintenant
+                </a>
+              </li>
             </ul>
+            <!-- Bouton Dark Mode -->
             <button id="theme-toggle" class="btn btn-outline-primary ms-3">
               Mode
             </button>
@@ -65,9 +80,16 @@
         </div>
       </nav>
     </header>
-    <main>
+
+    <!-- CONTENU PRINCIPAL -->
+
+    <main class="container py-5 mt-5">
+      <!-- HERO SECTION -->
+
       <section class="hero-section fade-section container py-5">
         <div class="row align-items-center">
+          <!-- Texte de présentation -->
+
           <div class="col-lg-6">
             <h1>
               Connectez les meilleurs talents tech africains aux entreprises du
@@ -85,6 +107,7 @@
               bien d'autres professionnels peuvent trouver des opportunités
               adaptées à leurs compétences.
             </p>
+            <!-- Boutons d'action -->
 
             <a href="contact.html" class="btn btn-primary me-2">
               Je suis Freelance
@@ -94,6 +117,7 @@
               Je cherche un Freelance
             </a>
           </div>
+          <!-- Image Hero -->
 
           <div class="col-lg-6">
             <img
@@ -103,6 +127,7 @@
             />
           </div>
         </div>
+        <!-- Compteurs statistiques -->
 
         <div class="row text-center hero-stats">
           <div class="col-md-4">
@@ -121,6 +146,8 @@
           </div>
         </div>
       </section>
+      <!-- COMMENT ÇA MARCHE BENTO GRID -->
+
       <section class="fade-section container py-5">
         <h2 class="text-center mb-5">Comment fonctionne AfriTalent ?</h2>
 
@@ -160,18 +187,21 @@
           </article>
         </div>
       </section>
+      <!-- CATÉGORIES DE SERVICES -->
 
       <section class="fade-section container py-5">
         <h2 class="text-center mb-5">Catégories de services</h2>
 
         <div class="row g-4">
+          <!-- Catégorie Développement Web -->
           <div class="col-md-4">
             <div class="category-card">
               <i class="bi bi-code-slash"></i>
-              <h4>Développement Web</h4>
+              <h3>Développeur Web</h3>
               <p>450 freelances disponibles</p>
             </div>
           </div>
+          <!-- Catégorie UI/UX -->
 
           <div class="col-md-4">
             <div class="category-card">
@@ -180,6 +210,7 @@
               <p>320 freelances disponibles</p>
             </div>
           </div>
+          <!-- Catégorie Marketing -->
 
           <div class="col-md-4">
             <div class="category-card">
@@ -188,6 +219,7 @@
               <p>280 freelances disponibles</p>
             </div>
           </div>
+          <!-- Catégorie Data & IA -->
 
           <div class="col-md-4">
             <div class="category-card">
@@ -196,6 +228,7 @@
               <p>170 freelances disponibles</p>
             </div>
           </div>
+          <!-- Catégorie Rédaction -->
 
           <div class="col-md-4">
             <div class="category-card">
@@ -204,6 +237,7 @@
               <p>210 freelances disponibles</p>
             </div>
           </div>
+          <!-- Catégorie Cloud -->
 
           <div class="col-md-4">
             <div class="category-card">
@@ -214,6 +248,8 @@
           </div>
         </div>
       </section>
+      <!-- TÉMOIGNAGES CLIENTS CAROUSEL BOOTSTRAP -->
+
       <section class="fade-section container py-5">
         <h2 class="text-center mb-5">Témoignages</h2>
 
@@ -232,7 +268,7 @@
                 />
                 <div class="stars">★★★★★</div>
 
-                <h4>Fatou Ndiaye</h4>
+                <h3>Fatou Fall</h3>
 
                 <p>Startup Founder</p>
 
@@ -252,7 +288,7 @@
                 />
                 <div class="stars">★★★★★</div>
 
-                <h4>Moussa Ba</h4>
+                <h3>Développeur Full Stack</h3>
 
                 <p>Développeur Full Stack</p>
 
@@ -285,6 +321,8 @@
           </div>
         </div>
       </section>
+      <!-- APPEL À L'ACTION (CTA) -->
+
       <section class="fade-section container cta-section">
         <h2>Rejoignez la communauté AfriTalent dès aujourd'hui.</h2>
 
@@ -298,20 +336,24 @@
         </a>
       </section>
     </main>
+    <!-- FOOTER -->
+
     <footer class="bg-dark text-white py-5">
       <div class="container">
         <div class="row">
+          <!-- Présentation de la plateforme -->
           <div class="col-md-3">
-            <h5>AfriTalent</h5>
+            <h2>AfriTalent</h2>
 
             <p>
               Plateforme africaine de mise en relation entre freelances tech et
               entreprises.
             </p>
           </div>
+          <!-- Liens utiles -->
 
           <div class="col-md-3">
-            <h5>Liens utiles</h5>
+            <h2>Liens utiles</h2>
 
             <ul class="list-unstyled">
               <li>Accueil</li>
@@ -319,9 +361,10 @@
               <li>Tarifs</li>
             </ul>
           </div>
+          <!-- Ressources -->
 
           <div class="col-md-3">
-            <h5>Ressources</h5>
+            <h2>Ressources</h2>
 
             <ul class="list-unstyled">
               <li>Blog</li>
@@ -329,9 +372,10 @@
               <li>Support</li>
             </ul>
           </div>
+          <!-- Coordonnées de contact -->
 
           <div class="col-md-3">
-            <h5>Contact</h5>
+            <h2>Contact</h2>
 
             <p>contact@afritalent.com</p>
             <p>+221 78 690 34 76</p>
@@ -340,6 +384,7 @@
         </div>
       </div>
     </footer>
+    <!-- Bouton retour en haut -->
     <button id="backToTop" class="btn btn-primary">↑</button>
 
     <!-- Le contenu de la page sera ajoute ici -->

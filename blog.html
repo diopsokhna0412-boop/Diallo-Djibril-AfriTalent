@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- HEADER / NAVBAR -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
           <a class="navbar-brand fw-bold" href="index.html"> AfriTalent </a>
+          <!-- Bouton hamburger mobile -->
 
           <button
             class="navbar-toggler"
@@ -27,11 +29,12 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- Menu principal -->
 
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="index.html"> Accueil </a>
+                <a class="nav-link" href="index.html"> Accueil </a>
               </li>
 
               <li class="nav-item">
@@ -47,13 +50,20 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="blog.html"> Blog </a>
+                <a class="nav-link active" href="blog.html"> Blog </a>
               </li>
 
               <li class="nav-item">
                 <a class="nav-link" href="contact.html"> Contact </a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                  Rejoindre maintenant
+                </a>
+              </li>
             </ul>
+            <!-- Bouton Dark Mode -->
             <button id="theme-toggle" class="btn btn-outline-primary ms-3">
               Mode
             </button>
@@ -61,7 +71,11 @@
         </div>
       </nav>
     </header>
+    <!-- CONTENU PRINCIPAL -->
+
     <main class="container py-5 mt-5">
+      <!-- Présentation du blog -->
+
       <section class="text-center mb-5">
         <h1>Blog AfriTalent</h1>
 
@@ -70,6 +84,7 @@
           monde du freelancing et des métiers du numérique.
         </p>
       </section>
+      <!-- ARTICLES À LA UNE -->
 
       <section class="mb-5">
         <h2 class="text-center mb-4">Articles à la Une</h2>
@@ -78,7 +93,7 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card blog-card h-100 shadow-sm">
               <img
-                src="images/image freel.jpeg"
+                src="./images/image-freel.jpeg"
                 class="card-img-top"
                 alt="Freelancing en Afrique"
               />
@@ -86,7 +101,7 @@
               <div class="card-body">
                 <span class="badge bg-primary mb-2"> Freelancing </span>
 
-                <h5 class="card-title">L'avenir du freelancing en Afrique</h5>
+                <h2 class="card-title">L'avenir du freelancing en Afrique</h2>
 
                 <p class="card-text">
                   Découvrez les opportunités offertes par la croissance rapide
@@ -101,7 +116,7 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card blog-card h-100 shadow-sm">
               <img
-                src="images/img profil.jpeg"
+                src="./images/img-profil.jpeg"
                 class="card-img-top"
                 alt="Profil freelance"
               />
@@ -109,9 +124,9 @@
               <div class="card-body">
                 <span class="badge bg-success mb-2"> Conseils </span>
 
-                <h5 class="card-title">
+                <h2 class="card-title">
                   Comment créer un profil freelance attractif ?
-                </h5>
+                </h2>
 
                 <p class="card-text">
                   Apprenez à mettre en valeur vos compétences et à attirer
@@ -126,7 +141,7 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card blog-card h-100 shadow-sm">
               <img
-                src="images/img ct.jpeg"
+                src="./images/img-ct.jpeg"
                 class="card-img-top"
                 alt="Compétences Tech"
               />
@@ -136,9 +151,9 @@
                   Technologie
                 </span>
 
-                <h5 class="card-title">
+                <h2 class="card-title">
                   Les compétences tech les plus recherchées en 2026
-                </h5>
+                </h2>
 
                 <p class="card-text">
                   Intelligence artificielle, cybersécurité, cloud computing :
@@ -151,6 +166,7 @@
           </div>
         </div>
       </section>
+      <!-- ARTICLES RÉCENTS -->
 
       <section class="mb-5">
         <h2 class="text-center mb-4">Articles Récents</h2>
@@ -159,9 +175,9 @@
           <div class="col-md-6">
             <div class="card blog-card h-100">
               <div class="card-body">
-                <h5>
+                <h2>
                   Les meilleures pratiques pour réussir une mission à distance
-                </h5>
+                </h2>
 
                 <p>
                   Découvrez comment communiquer efficacement avec vos clients et
@@ -176,10 +192,10 @@
           <div class="col-md-6">
             <div class="card blog-card h-100">
               <div class="card-body">
-                <h5>
+                <h2>
                   Pourquoi les entreprises recrutent de plus en plus de
                   freelances ?
-                </h5>
+                </h2>
 
                 <p>
                   Analyse des tendances du marché et des avantages du travail
@@ -192,6 +208,7 @@
           </div>
         </div>
       </section>
+      <!-- NEWSLETTER -->
 
       <section class="text-center">
         <div class="card blog-card p-5 shadow-sm">
@@ -201,6 +218,7 @@
             Inscrivez-vous à notre newsletter pour recevoir nos derniers
             conseils et opportunités professionnelles.
           </p>
+          <!-- Formulaire d'abonnement -->
 
           <form class="row justify-content-center">
             <div class="col-md-6">
@@ -220,20 +238,24 @@
         </div>
       </section>
     </main>
+    <!-- Footer -->
+
     <footer class="bg-dark text-white py-5">
       <div class="container">
         <div class="row">
+          <!-- Présentation de la plateforme -->
           <div class="col-md-3">
-            <h5>AfriTalent</h5>
+            <h2>AfriTalent</h2>
 
             <p>
               Plateforme africaine de mise en relation entre freelances tech et
               entreprises.
             </p>
           </div>
+          <!-- Liens utiles -->
 
           <div class="col-md-3">
-            <h5>Liens utiles</h5>
+            <h2>Liens utiles</h2>
 
             <ul class="list-unstyled">
               <li>Accueil</li>
@@ -241,9 +263,10 @@
               <li>Tarifs</li>
             </ul>
           </div>
+          <!-- Ressources -->
 
           <div class="col-md-3">
-            <h5>Ressources</h5>
+            <h2>Ressources</h2>
 
             <ul class="list-unstyled">
               <li>Blog</li>
@@ -251,9 +274,10 @@
               <li>Support</li>
             </ul>
           </div>
+          <!-- contact -->
 
           <div class="col-md-3">
-            <h5>Contact</h5>
+            <h2>Contact</h2>
 
             <p>contact@afritalent.com</p>
             <p>+221 78 690 34 76</p>
@@ -262,6 +286,7 @@
         </div>
       </div>
     </footer>
+    <!-- BOUTON RETOUR EN HAUT -->
     <button id="backToTop" class="btn btn-primary">↑</button>
 
     <!-- Le contenu de la page sera ajoute ici -->

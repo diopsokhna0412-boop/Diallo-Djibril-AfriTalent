@@ -1,33 +1,40 @@
-
+/* IMPORTATION DES POLICES GOOGLE FONTS */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-
-
+ /* VARIABLES GLOBALES CSS Couleurs, polices, espacements et effets réutilisables */
+   
 :root {
+    /* Couleurs principales */
 
     --primary-color: #0D6EFD;
     --secondary-color: #198754;
     --accent-color: #FFC107;
-
     --dark-color: #212529;
     --light-color: #F8F9FA;
     --white-color: #FFFFFF;
 
+     /* Polices */
+
     --title-font: "Poppins", sans-serif;
     --body-font: "Inter", sans-serif;
+
+    /* Espacements */
+
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
+
+    /* Effets visuels */
 
     --border-radius: 12px;
     --shadow: 0 4px 15px rgba(0,0,0,0.08);
     --transition: all 0.3s ease;
 }
 
-
+/* RESET CSS Suppression des marges et paddings par défaut */
 
 * {
     margin: 0;
@@ -35,9 +42,13 @@
     box-sizing: border-box;
 }
 
+/* Défilement fluide sur les ancres */
+
 html {
     scroll-behavior: smooth;
 }
+
+/* STYLES GÉNÉRAUX DU SITE */
 
 body {
     font-family: var(--body-font);
@@ -46,11 +57,14 @@ body {
     line-height: 1.6;
 }
 
+/* Images responsives */
+
 img {
     max-width: 100%;
     display: block;
 }
 
+/* Titres */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--title-font);
@@ -58,11 +72,13 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--dark-color);
 }
 
+/* Paragraphes */
+
 p {
     margin-bottom: 1rem;
 }
 
-
+/* LIENS */
 
 a {
     text-decoration: none;
@@ -73,7 +89,7 @@ a:hover {
     color: var(--primary-color);
 }
 
-
+/* STRUCTURE GÉNÉRALE */
 
 main {
     min-height: 100vh;
@@ -87,13 +103,15 @@ section {
     width: 100%;
 }
 
-
+/* NAVBAR */
 
 .navbar {
     background-color: var(--white-color);
     box-shadow: var(--shadow);
     padding: 15px 0;
 }
+
+/* Logo */
 
 .navbar-brand {
     font-family: var(--title-font);
@@ -102,9 +120,13 @@ section {
     color: var(--primary-color) !important;
 }
 
+/* Espacement des liens */
+
 .navbar-nav {
     gap: 1rem;
 }
+
+/* Liens du menu */
 
 .nav-link {
     font-family: var(--body-font);
@@ -112,11 +134,14 @@ section {
     color: var(--dark-color) !important;
 }
 
+/* Effet hover et page active */
+
 .nav-link:hover,
 .nav-link.active {
     color: var(--primary-color) !important;
 }
 
+/* BOUTONS */
 
 .btn {
     border-radius: var(--border-radius);
@@ -128,17 +153,29 @@ section {
     transform: translateY(-3px);
 }
 
+/* CARTES */
+
 .card {
     border: none;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     transition: var(--transition);
 }
+/* Images des freelances */
+.card-img-top{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
 
 .card:hover {
     transform: translateY(-5px);
 }
 
+/* FOOTER */
 
 footer {
     background-color: var(--dark-color);
@@ -153,6 +190,8 @@ footer a {
 footer a:hover {
     color: var(--accent-color);
 }
+
+/* SECTION HERO */
 
 .hero-section {
     min-height: 90vh;
@@ -178,6 +217,7 @@ footer a:hover {
     margin-top: 1.5rem;
 }
 
+/* Statistiques du Hero */
 
 .hero-stats {
     display: flex;
@@ -190,6 +230,7 @@ footer a:hover {
     font-weight: 700;
 }
 
+/* BENTO GRID */
 
 .bento-grid {
     display: grid;
@@ -210,11 +251,14 @@ footer a:hover {
     transform: translateY(-8px);
 }
 
+/* Cartes plus larges */
+
 .bento-item:nth-child(1),
 .bento-item:nth-child(4) {
     grid-column: span 2;
 }
 
+/* CATÉGORIES DE SERVICES */
 
 .category-card {
     background: var(--white-color);
@@ -237,6 +281,7 @@ footer a:hover {
     box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
+/* CAROUSEL TÉMOIGNAGES */
 
 .carousel {
     background: var(--white-color);
@@ -263,19 +308,27 @@ footer a:hover {
     margin: 1rem auto;
 }
 
+/* Flèches du carousel */
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(1);
 }
+
+/* EFFET HOVER SUR LES CARTES */
 
 .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
 
+/* EFFET HOVER SUR LES BOUTONS */
+
 .btn:hover {
     transform: translateY(-3px);
 }
+
+/* TITRES DE SECTION */
 
 section h2 {
     font-size: 2.5rem;
@@ -283,6 +336,7 @@ section h2 {
     margin-bottom: var(--spacing-lg);
 }
 
+/* RESPONSIVE TABLETTE */
 
 @media (max-width: 768px) {
 
@@ -325,6 +379,7 @@ section h2 {
     }
 }
 
+/* RESPONSIVE MOBILE */
 
 @media (max-width: 375px) {
 
@@ -357,6 +412,7 @@ section h2 {
     }
 }
 
+/* RESPONSIVE DESKTOP */
 
 @media (min-width: 1200px) {
 
@@ -369,6 +425,8 @@ section h2 {
         margin: auto;
     }
 }
+
+/* DARK MODE  */
 
 .dark-mode{
     background:#121212;
@@ -384,10 +442,14 @@ section h2 {
     color:white;
 }
 
+/* NAVBAR DYNAMIQUE AU SCROLL */
+
 .navbar-scrolled{
     box-shadow:0 4px 20px rgba(0,0,0,0.15);
     padding:8px 0;
 }
+
+/* BOUTON RETOUR EN HAUT */
 
 #backToTop{
     position:fixed;
@@ -396,6 +458,8 @@ section h2 {
     display:none;
     z-index:999;
 }
+
+/* ANIMATIONS FADE-IN */
 
 .fade-section{
     opacity:0;
@@ -408,16 +472,23 @@ section h2 {
     transform:translateY(0);
 }
 
+/* COMPTEURS ANIMÉS */
+
 .counter{
     font-size:3rem;
     font-weight:700;
     color:var(--primary-color);
 }
+
+/* VALIDATION DU FORMULAIRE */
+
 .error-message{
     color:red;
     font-size:0.9rem;
     margin-top:5px;
 }
+
+/* Message de succès */
 
 #successMessage{
     color:green;
